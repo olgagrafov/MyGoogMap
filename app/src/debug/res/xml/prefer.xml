@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="please choose km/miles and distance for search">
+        <ListPreference
+            android:entries="@array/measure"
+            android:entryValues="@array/measureValues"
+            android:key="measure_key"
+            android:defaultValue="km"
+            android:title="Choose measure" />
+      </PreferenceCategory>
+    <ListPreference
+        android:entries="@array/distance"
+        android:entryValues="@array/distanceValues"
+        android:key="distance_key"
+        android:defaultValue="500"
+        android:title="Choose distance" />
+
+</PreferenceScreen>

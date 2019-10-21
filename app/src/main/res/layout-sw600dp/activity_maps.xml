@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.olgag.mygoogmap.activities.MapsActivity">
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/myToolbar"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                android:layout_alignParentLeft="true"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                android:layout_toRightOf="@+id/btnClose"
+
+                />
+
+            <EditText
+                android:id="@+id/txtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Text For Search"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:inputType="textPersonName"
+                android:layout_toRightOf="@id/btnSearch"
+                />
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                android:text="Go"
+                android:textStyle="bold|italic"
+                android:layout_toRightOf="@+id/txtSearch"
+                android:scaleX="0"
+                android:scaleY="0"
+
+                />
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@android:drawable/ic_menu_preferences"
+                android:layout_alignParentRight="true"
+                />
+            <ImageButton
+                android:id="@+id/btnFavor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@android:drawable/btn_star_big_on"
+                android:layout_toLeftOf="@id/btnSettings"
+                />
+        </RelativeLayout>
+    </Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/myToolbar"
+       >
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

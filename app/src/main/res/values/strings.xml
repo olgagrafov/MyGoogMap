@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyGoogMap</string>
+    <string name="title_activity_maps">Serch Your Favorite Places</string>
+    <bool name="isTablet">false</bool>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="measure">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="measureValues">
+        <item>km</item>
+        <item>ml</item>
+    </string-array>
+
+    <string-array name="distance">
+        <item>0.5 km/ 0.5 ml</item>
+        <item>1 km / 1 ml</item>
+        <item>1.5 km / 1.5 ml</item>
+        <item>2 km / 2 ml</item>
+        <item>2.5 km / 2.5 ml</item>
+        <item>3 km / 3 ml</item>
+        <item>3.5 km / 3.5 ml</item>
+        <item>4 km / 4 ml</item>
+        <item>4.5 km / 4.5 ml</item>
+        <item>5 km / 5 ml</item>
+    </string-array>
+    <string-array name="distanceValues">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+    </string-array>
+</resources>
