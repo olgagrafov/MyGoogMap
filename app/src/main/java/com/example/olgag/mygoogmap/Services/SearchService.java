@@ -43,11 +43,10 @@ public class SearchService extends IntentService {
         double userLat = intent.getDoubleExtra("userLat",0);
         double userLng = intent.getDoubleExtra("userLng",0);
         double distance = intent.getDoubleExtra("distance", 500);
-        String urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + userLat + "," + userLng + "&radius=" + distance + "&keyword=" + search + "&key=AIzaSyBGPTt9U5ILeZS1JESASK1ua-wYHt83eHo";
+        String urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + userLat + "," + userLng + "&radius=" + distance + "&keyword=" + search + "&key=";
 
-      //  https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=31.2359582,34.7796028&radius=500&keyword=hotel&key=AIzaSyBGPTt9U5ILeZS1JESASK1ua-wYHt83eHo
-
-        //http://maps.googleapis.com/maps/api/place/photo?photo_reference=CmRaAAAAL_tYmOXptYg7THXTSIw2yzElJUz7CsPquEuGpoXjbgLakcjXqdgO3TONhUP7R_ZPNk-KGLVYbeRqRq0upiPrH0nzxlnFHFxsxiagcCLPphnO_zcErlArtZ-JllBz7h6IEhAN4VDTX9s5ZWLT43P19Rw_GhSioe2JezeE5Sez8IJFB88IrBv51A&key=AIzaSyBGPTt9U5ILeZS1JESASK1ua-wYHt83eHo
+      //  https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=31.2359582,34.7796028&radius=500&keyword=hotel&key=
+        //http://maps.googleapis.com/maps/api/place/photo?photo_reference=CmRaAAAAL_tYmOXptYg7THXTSIw2yzElJUz7CsPquEuGpoXjbgLakcjXqdgO3TONhUP7R_ZPNk-KGLVYbeRqRq0upiPrH0nzxlnFHFxsxiagcCLPphnO_zcErlArtZ-JllBz7h6IEhAN4VDTX9s5ZWLT43P19Rw_GhSioe2JezeE5Sez8IJFB88IrBv51A&key=
 
       //  <a href=\"https://maps.google.com/maps/contrib/116432149663877434486/photos\">Maxim Hotel Tel Aviv</a>
 
